@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: inzint-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn src.wsgi:application
+    autoDeploy: true
+    envVars:
+      - key: DEBUG
+        value: False
+      - key: SECRET_KEY
+        value: your-django-secret
+      - key: ALLOWED_HOSTS
+        value: inzint-backend.onrender.com
