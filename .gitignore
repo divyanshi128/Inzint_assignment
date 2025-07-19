@@ -1,0 +1,41 @@
+# -------------------
+# React frontend (root)
+# -------------------
+node_modules/
+.env
+.env.*          # e.g., .env.production, .env.development
+build/
+dist/
+.parcel-cache/
+.eslintcache
+coverage/
+*.log
+
+# -------------------
+# Django backend
+# -------------------
+backend/env/
+backend/__pycache__/
+backend/**/*.pyc
+backend/**/*.pyo
+backend/**/*.pyd
+backend/*.sqlite3
+backend/*.db
+backend/.env
+
+# Django migrations and cache
+backend/src/**/__pycache__/
+backend/src/**/migrations/*.py
+backend/src/**/migrations/*.pyc
+
+# Optional: ignore all migration folders
+# backend/src/**/migrations/
+
+# -------------------
+# OS & Editor specific
+# -------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
