@@ -18,7 +18,6 @@ cd <your-project-folder>
 ## Frontend Setup
 
 ```bash
-cd frontend
 npm install
 ```
 
